@@ -87,12 +87,12 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 | Pertemuan | Materi / Fokus                                        | Status |
 | --------- | ----------------------------------------------------- | :----: |
 | **01**    | Pengenalan lingkungan praktikum & kakas pemodelan UML |   ✅   |
-| **02**    | Akan ditambahkan                                      |    ⏳   |
-| **03**    | Akan ditambahkan                                      |    ⏳   |
-| **04**    | Akan ditambahkan                                      |    ⏳   |
-| **05**    | Akan ditambahkan                                      |    ⏳   |
-| **06**    | Akan ditambahkan                                      |    ⏳   |
-| **...**   | Akan ditambahkan sesuai jobsheet                      |    ⏳   |
+| **02**    | UNIFIED MODELING LANGUAGE (UML)                       |   ✅   |
+| **03**    | Akan ditambahkan                                      |   ⏳   |
+| **04**    | Akan ditambahkan                                      |   ⏳   |
+| **05**    | Akan ditambahkan                                      |   ⏳   |
+| **06**    | Akan ditambahkan                                      |   ⏳   |
+| **...**   | Akan ditambahkan sesuai jobsheet                      |   ⏳   |
 
 ### Status Legend
 
