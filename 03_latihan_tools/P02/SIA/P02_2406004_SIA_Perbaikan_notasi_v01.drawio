@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Halaman-1" id="yws8qRkd3_64-yMDitJj">
+    <mxGraphModel dx="860" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" value="sistem laboratorium" vertex="1">
+          <mxGeometry height="420" width="386" x="221" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-10" parent="SCzs6fj-1HFH_mjq2Ytm-1" style="ellipse;html=1;whiteSpace=wrap;" value="&lt;div&gt;Mengelola&amp;nbsp;&lt;/div&gt;&lt;div&gt;Jadwal Kuliah&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="124" x="199" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-2" parent="SCzs6fj-1HFH_mjq2Ytm-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="60" width="30" x="19" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-12" edge="1" parent="SCzs6fj-1HFH_mjq2Ytm-1" source="SCzs6fj-1HFH_mjq2Ytm-2" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="SCzs6fj-1HFH_mjq2Ytm-13" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-101" y="220" as="sourcePoint" />
+            <mxPoint x="60.07372634977628" y="280.46953067507104" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-13" parent="SCzs6fj-1HFH_mjq2Ytm-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Melihat&amp;nbsp;&lt;div&gt;Jadwal Kuliah&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="49" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-14" edge="1" parent="SCzs6fj-1HFH_mjq2Ytm-1" source="SCzs6fj-1HFH_mjq2Ytm-2" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;exitX=0.633;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="SCzs6fj-1HFH_mjq2Ytm-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="119" y="360" as="sourcePoint" />
+            <mxPoint x="164" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="60" width="30" x="700" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="SCzs6fj-1HFH_mjq2Ytm-11" edge="1" parent="1" source="SCzs6fj-1HFH_mjq2Ytm-10" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="SCzs6fj-1HFH_mjq2Ytm-7" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="520" y="320" as="sourcePoint" />
+            <mxPoint x="680" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
