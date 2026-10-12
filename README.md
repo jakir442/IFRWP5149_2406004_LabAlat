@@ -2,10 +2,6 @@
 
 <div align="center">
 
-
-
-
-
 ### Praktikum Analisis dan Desain Berorientasi Objek
 
 **S1 Teknik Informatika — Institut Teknologi Garut**
@@ -88,7 +84,7 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 | --------- | ----------------------------------------------------- | :----: |
 | **01**    | Pengenalan lingkungan praktikum & kakas pemodelan UML |   ✅   |
 | **02**    | UNIFIED MODELING LANGUAGE (UML)                       |   ✅   |
-| **03**    | Akan ditambahkan                                      |   ⏳   |
+| **03**    | USE CASE DIAGRAM DAN USE CASE DESCRIPTION             |   ✅   |
 | **04**    | Akan ditambahkan                                      |   ⏳   |
 | **05**    | Akan ditambahkan                                      |   ⏳   |
 | **06**    | Akan ditambahkan                                      |   ⏳   |
@@ -99,8 +95,8 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 | Status | Meaning                          |
 | ------ | -------------------------------- |
 | 🔄     | Sedang dikerjakan / dalam proses |
-| ✅      | Selesai                          |
-| ⏳      | Belum dikerjakan                 |
+| ✅     | Selesai                          |
+| ⏳     | Belum dikerjakan                 |
 | ⚠️     | Memerlukan perbaikan             |
 
 ---
@@ -111,17 +107,17 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 
 Pertemuan pertama berfokus pada:
 
-* Menyiapkan workspace praktikum.
-* Mengenal kakas pemodelan UML.
-* Membuat canvas diagram.
-* Menambahkan elemen diagram.
-* Menghubungkan elemen dengan connector.
-* Memberikan label pada elemen.
-* Menyimpan source file.
-* Membuka kembali source file.
-* Melakukan penyuntingan.
-* Mengekspor diagram.
-* Mendokumentasikan kegiatan melalui logbook.
+- Menyiapkan workspace praktikum.
+- Mengenal kakas pemodelan UML.
+- Membuat canvas diagram.
+- Menambahkan elemen diagram.
+- Menghubungkan elemen dengan connector.
+- Memberikan label pada elemen.
+- Menyimpan source file.
+- Membuka kembali source file.
+- Melakukan penyuntingan.
+- Mengekspor diagram.
+- Mendokumentasikan kegiatan melalui logbook.
 
 Pertemuan ini **belum bertujuan menghasilkan model analisis final**. Fokusnya adalah memastikan lingkungan kerja dan kemampuan dasar penggunaan kakas telah siap.
 
@@ -152,12 +148,12 @@ Skenario latihan:
 
 Diagram latihan terdiri dari:
 
-| No | Element                      | Description           |
-| -: | ---------------------------- | --------------------- |
-|  1 | Initial Node                 | Titik awal aktivitas  |
-|  2 | Buka daftar peralatan        | Aktivitas pertama     |
-|  3 | Lihat informasi ketersediaan | Aktivitas kedua       |
-|  4 | Final Node                   | Titik akhir aktivitas |
+|  No | Element                      | Description           |
+| --: | ---------------------------- | --------------------- |
+|   1 | Initial Node                 | Titik awal aktivitas  |
+|   2 | Buka daftar peralatan        | Aktivitas pertama     |
+|   3 | Lihat informasi ketersediaan | Aktivitas kedua       |
+|   4 | Final Node                   | Titik akhir aktivitas |
 
 Total terdapat **empat elemen** dan **tiga alur penghubung berarah**.
 
@@ -272,11 +268,11 @@ P01_2406004_latihan_activity_v01.png
 
 ### Version Rules
 
-* Versi awal menggunakan `v01`.
-* Nomor versi dinaikkan apabila isi artefak mengalami perubahan.
-* Perubahan versi dicatat pada logbook.
-* Source dan export harus menggunakan versi yang konsisten.
-* Export harus berasal dari source versi terakhir.
+- Versi awal menggunakan `v01`.
+- Nomor versi dinaikkan apabila isi artefak mengalami perubahan.
+- Perubahan versi dicatat pada logbook.
+- Source dan export harus menggunakan versi yang konsisten.
+- Export harus berasal dari source versi terakhir.
 
 ---
 
@@ -308,32 +304,32 @@ Checklist berikut digunakan untuk memeriksa kualitas pekerjaan **Pertemuan 01**.
 
 ## 📁 Workspace
 
-* [ ] Folder induk menggunakan NIM dan nama kasus yang benar.
-* [ ] README menjelaskan identitas, kakas, dan status latihan.
-* [ ] Logbook tersedia dan dapat dibaca.
-* [ ] Template metadata tersedia dan dapat dibaca.
+- [ ] Folder induk menggunakan NIM dan nama kasus yang benar.
+- [ ] README menjelaskan identitas, kakas, dan status latihan.
+- [ ] Logbook tersedia dan dapat dibaca.
+- [ ] Template metadata tersedia dan dapat dibaca.
 
 ## 📐 Diagram
 
-* [ ] Diagram memiliki empat elemen latihan.
-* [ ] Diagram memiliki tiga alur penghubung.
-* [ ] Label diagram dapat terbaca.
-* [ ] Diagram diberi status belum divalidasi.
-* [ ] Tidak ada aturan bisnis tambahan yang diklaim sebagai fakta.
+- [ ] Diagram memiliki empat elemen latihan.
+- [ ] Diagram memiliki tiga alur penghubung.
+- [ ] Label diagram dapat terbaca.
+- [ ] Diagram diberi status belum divalidasi.
+- [ ] Tidak ada aturan bisnis tambahan yang diklaim sebagai fakta.
 
 ## 💾 Source & Export
 
-* [ ] Source file dapat dibuka kembali.
-* [ ] Source file dapat disunting.
-* [ ] Gambar ekspor sesuai dengan versi terakhir source.
-* [ ] Nama source dan export konsisten.
-* [ ] Nomor versi source dan export konsisten.
+- [ ] Source file dapat dibuka kembali.
+- [ ] Source file dapat disunting.
+- [ ] Gambar ekspor sesuai dengan versi terakhir source.
+- [ ] Nama source dan export konsisten.
+- [ ] Nomor versi source dan export konsisten.
 
 ## 📦 Submission
 
-* [ ] Arsip pengumpulan dapat dibuka.
-* [ ] Tidak terdapat kredensial.
-* [ ] Tidak terdapat data pribadi nyata.
+- [ ] Arsip pengumpulan dapat dibuka.
+- [ ] Tidak terdapat kredensial.
+- [ ] Tidak terdapat data pribadi nyata.
 
 Checklist ini mengikuti standar kualitas dan validasi yang ditetapkan dalam Jobsheet Pertemuan 1.
 
@@ -352,7 +348,7 @@ Checklist ini mengikuti standar kualitas dan validasi yang ditetapkan dalam Jobs
 | Export File       |   🔄   |
 | Logbook           |   🔄   |
 | Short Report      |   🔄   |
-| Validation        |    ⏳   |
+| Validation        |   ⏳   |
 
 > Status akan diubah menjadi `✅` setelah komponen benar-benar selesai dan diperiksa.
 
@@ -386,9 +382,9 @@ Repository ini akan diperbarui setiap kali terdapat jobsheet, tugas, latihan, at
 
 # 📚 References
 
-* Jobsheet Praktikum Analisis dan Desain Berorientasi Objek — Pertemuan 1.
-* Dokumentasi kakas pemodelan UML.
-* OMG UML 2.5.1.
+- Jobsheet Praktikum Analisis dan Desain Berorientasi Objek — Pertemuan 1.
+- Dokumentasi kakas pemodelan UML.
+- OMG UML 2.5.1.
 
 ---
 
