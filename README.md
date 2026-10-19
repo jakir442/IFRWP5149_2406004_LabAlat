@@ -80,15 +80,15 @@ Peran tersebut digunakan sebagai konteks awal untuk latihan pemodelan. Detail at
 
 Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 
-| Pertemuan | Materi / Fokus                                        | Status |
-| --------- | ----------------------------------------------------- | :----: |
-| **01**    | Pengenalan lingkungan praktikum & kakas pemodelan UML |   ✅   |
-| **02**    | UNIFIED MODELING LANGUAGE (UML)                       |   ✅   |
-| **03**    | USE CASE DIAGRAM DAN USE CASE DESCRIPTION             |   ✅   |
-| **04**    | Akan ditambahkan                                      |   ⏳   |
-| **05**    | Akan ditambahkan                                      |   ⏳   |
-| **06**    | Akan ditambahkan                                      |   ⏳   |
-| **...**   | Akan ditambahkan sesuai jobsheet                      |   ⏳   |
+| Pertemuan | Materi / Fokus                                              | Status |
+| --------- | ----------------------------------------------------------- | :----: |
+| **01**    | Pengenalan lingkungan praktikum & kakas pemodelan UML       |   ✅   |
+| **02**    | UNIFIED MODELING LANGUAGE (UML)                             |   ✅   |
+| **03**    | USE CASE DIAGRAM DAN USE CASE DESCRIPTION                   |   ✅   |
+| **04**    | USE CASE DIAGRAM LANJUTAN: GENERALIZATION DAN COLLABORATION |   ✅   |
+| **05**    | Akan ditambahkan                                            |   ⏳   |
+| **06**    | Akan ditambahkan                                            |   ⏳   |
+| **...**   | Akan ditambahkan sesuai jobsheet                            |   ⏳   |
 
 ### Status Legend
 

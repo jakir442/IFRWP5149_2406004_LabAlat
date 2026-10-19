@@ -1,6 +1,6 @@
 ID artefak : LAB-P03-UC
 Judul : Latihan notasi fungsi laboratorium
-Pertemuan : 04
+Pertemuan : 03
 Sumber kebutuhan : LAB-R02
 Jenis/status : Use case diagram / LATIHAN NOTASI
 Kakas : VS Code, draw.io, Browser
