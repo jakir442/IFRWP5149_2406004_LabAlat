@@ -86,8 +86,9 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 | **02**    | UNIFIED MODELING LANGUAGE (UML)                             |   ✅   |
 | **03**    | USE CASE DIAGRAM DAN USE CASE DESCRIPTION                   |   ✅   |
 | **04**    | USE CASE DIAGRAM LANJUTAN: GENERALIZATION DAN COLLABORATION |   ✅   |
-| **05**    | Akan ditambahkan                                            |   ⏳   |
+| **05**    | SKENARIO USE CASE: DARI DIAGRAM KE LANGKAH KEGIATAN         |   ✅   |
 | **06**    | Akan ditambahkan                                            |   ⏳   |
+| **07**    | Akan ditambahkan                                            |   ⏳   |
 | **...**   | Akan ditambahkan sesuai jobsheet                            |   ⏳   |
 
 ### Status Legend
