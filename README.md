@@ -87,7 +87,7 @@ Repository ini akan diperbarui mengikuti rangkaian pertemuan praktikum.
 | **03**    | USE CASE DIAGRAM DAN USE CASE DESCRIPTION                   |   ✅   |
 | **04**    | USE CASE DIAGRAM LANJUTAN: GENERALIZATION DAN COLLABORATION |   ✅   |
 | **05**    | SKENARIO USE CASE: DARI DIAGRAM KE LANGKAH KEGIATAN         |   ✅   |
-| **06**    | Akan ditambahkan                                            |   ⏳   |
+| **06**    | ACTIVITY DIAGRAM: DARI SKENARIO KE ALUR AKTIVITAS           |   ✅   |
 | **07**    | Akan ditambahkan                                            |   ⏳   |
 | **...**   | Akan ditambahkan sesuai jobsheet                            |   ⏳   |
 

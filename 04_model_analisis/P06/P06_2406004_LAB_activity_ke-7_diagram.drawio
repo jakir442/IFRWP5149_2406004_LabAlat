@@ -1,0 +1,968 @@
+<mxfile host="app.diagrams.net" pages="7">
+  <diagram name="Activity DIagram Peminjaman" id="O2wdoTi7CctlXhvoYo04">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="23E3ceBQzfFx3gFtu6vH-0" />
+        <mxCell id="23E3ceBQzfFx3gFtu6vH-1" parent="23E3ceBQzfFx3gFtu6vH-0" />
+        <mxCell id="H8JaMS3vlT7czDw8erye-0" parent="23E3ceBQzfFx3gFtu6vH-1" style="swimlane;whiteSpace=wrap;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="1190" width="200" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-0" edge="1" parent="H8JaMS3vlT7czDw8erye-0" source="H8JaMS3vlT7czDw8erye-8" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" target="H8JaMS3vlT7czDw8erye-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-8" parent="H8JaMS3vlT7czDw8erye-0" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-9" parent="H8JaMS3vlT7czDw8erye-0" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Mengisi formulir pengajuan peminjaman" vertex="1">
+          <mxGeometry height="40" width="140" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-11" parent="H8JaMS3vlT7czDw8erye-0" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menerima pemberitahuan pengajuan tidak terpenuhi" vertex="1">
+          <mxGeometry height="50" width="140" x="30" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bmMgo3t0qNqoSGaHBXHc-2" parent="H8JaMS3vlT7czDw8erye-0" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Cetak bukti pengajuan&lt;div&gt;(dari LAB-UC05)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="30" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-6" parent="23E3ceBQzfFx3gFtu6vH-1" style="swimlane;whiteSpace=wrap;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="1190" width="200" x="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-3" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="H8JaMS3vlT7czDw8erye-10" style="edgeStyle=none;html=1;endArrow=block;endFill=1;" target="err5BhwdrcvTdawg9xL9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-10" parent="H8JaMS3vlT7czDw8erye-6" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menyimpanan data pengajuan peminjaman" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="H8JaMS3vlT7czDw8erye-12" parent="H8JaMS3vlT7czDw8erye-6" style="rhombus;" value="peralatan &#xa;tersedia?" vertex="1">
+          <mxGeometry height="70" width="87.5" x="66.25" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-4" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="err5BhwdrcvTdawg9xL9-2" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" target="H8JaMS3vlT7czDw8erye-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-2" parent="H8JaMS3vlT7czDw8erye-6" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="periksa ketersediaan (dari LAB-UC04)" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-2" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="err5BhwdrcvTdawg9xL9-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmMgo3t0qNqoSGaHBXHc-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-18" parent="H8JaMS3vlT7czDw8erye-6" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="70" width="87.5" x="66.25" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-3" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="bmMgo3t0qNqoSGaHBXHc-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bmMgo3t0qNqoSGaHBXHc-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bmMgo3t0qNqoSGaHBXHc-0" parent="H8JaMS3vlT7czDw8erye-6" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Mecatata hasil akhir pengajuan" vertex="1">
+          <mxGeometry height="50" width="140" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-7" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="bmMgo3t0qNqoSGaHBXHc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bE1vrEuP20zRJ1Yk5PxF-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-9" connectable="0" parent="bE1vrEuP20zRJ1Yk5PxF-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="[]Tidak" vertex="1">
+          <mxGeometry relative="1" x="0.04" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmMgo3t0qNqoSGaHBXHc-1" parent="H8JaMS3vlT7czDw8erye-6" style="rhombus;" value="Mahasiswa memilihih&#xa; mencetak bukti?" vertex="1">
+          <mxGeometry height="120" width="151.88" x="34.059999999999995" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="KOeBX5iN-JEO_5xIujuX-9" parent="H8JaMS3vlT7czDw8erye-6" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="40" width="44.99" x="87.51" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-10" edge="1" parent="H8JaMS3vlT7czDw8erye-6" source="bE1vrEuP20zRJ1Yk5PxF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="KOeBX5iN-JEO_5xIujuX-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-6" parent="H8JaMS3vlT7czDw8erye-6" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="80" width="87.5" x="66.25" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-1" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="H8JaMS3vlT7czDw8erye-9" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;endArrow=block;endFill=1;" target="H8JaMS3vlT7czDw8erye-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-5" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="H8JaMS3vlT7czDw8erye-12" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;rounded=0;curved=0;" target="H8JaMS3vlT7czDw8erye-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-6" connectable="0" parent="err5BhwdrcvTdawg9xL9-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="[tidak tersedia]" vertex="1">
+          <mxGeometry relative="1" x="0.0066" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-7" parent="23E3ceBQzfFx3gFtu6vH-1" style="swimlane;whiteSpace=wrap;html=1;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="1190" width="200" x="540" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-14" parent="err5BhwdrcvTdawg9xL9-7" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Memproses keputusan peminjam" vertex="1">
+          <mxGeometry height="50" width="140" x="40" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-16" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="H8JaMS3vlT7czDw8erye-12" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;curved=0;endArrow=block;endFill=1;" target="err5BhwdrcvTdawg9xL9-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="err5BhwdrcvTdawg9xL9-17" connectable="0" parent="err5BhwdrcvTdawg9xL9-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="[tersedia]" vertex="1">
+          <mxGeometry relative="1" x="-0.0694" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-0" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="err5BhwdrcvTdawg9xL9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="err5BhwdrcvTdawg9xL9-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-1" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="H8JaMS3vlT7czDw8erye-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="err5BhwdrcvTdawg9xL9-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-4" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="bmMgo3t0qNqoSGaHBXHc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="bmMgo3t0qNqoSGaHBXHc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-5" connectable="0" parent="bE1vrEuP20zRJ1Yk5PxF-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="[Ya, memilih cetak]" vertex="1">
+          <mxGeometry relative="1" x="-0.1708" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bE1vrEuP20zRJ1Yk5PxF-8" edge="1" parent="23E3ceBQzfFx3gFtu6vH-1" source="bmMgo3t0qNqoSGaHBXHc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="bE1vrEuP20zRJ1Yk5PxF-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="1000" />
+              <mxPoint x="340" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zQQ-o-KS8o7WCuXTAEkZ" name="Activity Diagram Pengembalian">
+    <mxGraphModel dx="1036" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_mahasiswa" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="950" width="200" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="swimlane_mahasiswa" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menyerahkan" parent="swimlane_mahasiswa" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menyerahkan peralatan yang dipinjam" vertex="1">
+          <mxGeometry height="50" width="160" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_to_menyerahkan" edge="1" parent="swimlane_mahasiswa" source="start_node" style="edgeStyle=none;html=1;endArrow=block;endFill=1;" target="act_menyerahkan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="200" x="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_kondisi" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Kondisi&#xa;peralatan baik&#xa;dan lengkap?" vertex="1">
+          <mxGeometry height="80" width="130" x="35" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="act_perbarui" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Perbarui status peralatan menjadi tersedia" vertex="1">
+          <mxGeometry height="50" width="160" x="20" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="80" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menutup" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menutup transaksi peminjaman" vertex="1">
+          <mxGeometry height="40" width="160" x="20" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="swimlane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_to_perbarui" edge="1" parent="swimlane_sistem" source="dec_kondisi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_perbarui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_baik" connectable="0" parent="edge_dec_to_perbarui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[baik dan lengkap]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_perbarui_to_merge" edge="1" parent="swimlane_sistem" source="act_perbarui" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge_to_menutup" edge="1" parent="swimlane_sistem" source="merge_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menutup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_menutup_to_end" edge="1" parent="swimlane_sistem" source="act_menutup" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_petugas" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="950" width="280" x="540" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act_catat_pengembalian" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Catat Pengembalian Peralatan&#xa;(LAB-UC11)" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="fork_bar" parent="swimlane_petugas" style="html=1;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="240" x="20" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_kondisi" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Periksa Kondisi Peralatan&#xa;(dari LAB-UC12): kondisi fisik" vertex="1">
+          <mxGeometry height="60" width="110" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_kelengkapan" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Periksa kelengkapan&#xa;aksesori peralatan (unsur&#xa;proses baru)" vertex="1">
+          <mxGeometry height="80" width="110" x="150" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="join_bar" parent="swimlane_petugas" style="html=1;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="360" x="-100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="act_catat_kerusakan" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Catat kerusakan atau kekurangan dan&#xa;jadwalkan perbaikan" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_catat_to_fork" edge="1" parent="swimlane_petugas" source="act_catat_pengembalian" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="fork_bar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_to_kondisi" edge="1" parent="swimlane_petugas" source="fork_bar" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_periksa_kondisi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="75" y="270" />
+              <mxPoint x="75" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_fork_to_kelengkapan" edge="1" parent="swimlane_petugas" source="fork_bar" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_periksa_kelengkapan">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="270" />
+              <mxPoint x="205" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_kondisi_to_join" edge="1" parent="swimlane_petugas" source="act_periksa_kondisi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="join_bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="75" y="360" />
+              <mxPoint x="75" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_kelengkapan_to_join" edge="1" parent="swimlane_petugas" source="act_periksa_kelengkapan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="join_bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="360" />
+              <mxPoint x="205" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_menyerahkan_to_catat" edge="1" parent="1" source="act_menyerahkan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_catat_pengembalian">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="245" />
+              <mxPoint x="680" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_join_to_dec" edge="1" parent="1" source="join_bar" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_kondisi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="470" />
+              <mxPoint x="440" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_to_kerusakan" edge="1" parent="1" source="dec_kondisi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_catat_kerusakan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_rusak" connectable="0" parent="edge_dec_to_kerusakan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[rusak atau tidak lengkap]" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_kerusakan_to_merge" edge="1" parent="1" source="act_catat_kerusakan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="730" />
+              <mxPoint x="440" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IRgPUGV8xu3Mht8GbUnV" name="Activity Diagram Lihat Ketersediaan Peralatan">
+    <mxGraphModel dx="1036" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_peminjam" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Peminjam" vertex="1">
+          <mxGeometry height="700" width="220" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="swimlane_peminjam" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="95" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_membuka" parent="swimlane_peminjam" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Membuka fungsi Lihat Ketersediaan&#xa;Peralatan" vertex="1">
+          <mxGeometry height="50" width="180" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_to_membuka" edge="1" parent="swimlane_peminjam" source="start_node" style="edgeStyle=none;html=1;endArrow=block;endFill=1;" target="act_membuka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistem" vertex="1">
+          <mxGeometry height="700" width="260" x="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menampilkan_daftar" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan daftar peralatan beserta&#xa;status ketersediaannya" vertex="1">
+          <mxGeometry height="50" width="180" x="40" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_tersedia" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Peralatan&#xa;tersedia?" vertex="1">
+          <mxGeometry height="70" width="110" x="75" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pesan_tidak_tersedia" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menampilkan pesan tidak ada&#xa;peralatan yang tersedia" vertex="1">
+          <mxGeometry height="50" width="180" x="40" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="110" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="swimlane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="115" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_daftar_to_dec" edge="1" parent="swimlane_sistem" source="act_menampilkan_daftar" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_tersedia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_to_pesan" edge="1" parent="swimlane_sistem" source="dec_tersedia" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_pesan_tidak_tersedia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak_tersedia" connectable="0" parent="edge_dec_to_pesan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak tersedia]" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_to_merge" edge="1" parent="swimlane_sistem" source="dec_tersedia" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="305" />
+              <mxPoint x="230" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tersedia" connectable="0" parent="edge_dec_to_merge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tersedia]" vertex="1">
+          <mxGeometry relative="1" x="-0.4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pesan_to_merge" edge="1" parent="swimlane_sistem" source="act_pesan_tidak_tersedia" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge_to_end" edge="1" parent="swimlane_sistem" source="merge_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_membuka_to_daftar" edge="1" parent="1" source="act_membuka" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menampilkan_daftar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="245" />
+              <mxPoint x="490" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="R0zDqp2jR_6mYN5OzPcJ" name="Activity Diagram Kelola Data Peralatan">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_petugas" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="1520" width="280" x="60" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="swimlane_petugas" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="125" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="act_membuka" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Membuka fungsi Kelola Data&#xa;Peralatan" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="act_memilih_bentuk" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memilih bentuk pengelolaan&#xa;(tambah, ubah, atau hapus)" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="act_mengisi_baru" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Mengisi data peralatan baru&#xa;(dari LAB-UC08)" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_memilih_ubah" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memilih data peralatan yang akan&#xa;diubah (dari LAB-UC09)" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act_mengubah_data" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mengubah data peralatan&#xa;(dari LAB-UC09)" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="act_memilih_hapus" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memilih data peralatan yang akan&#xa;dihapus (dari LAB-UC10)" vertex="1">
+          <mxGeometry height="45" width="180" x="40" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="act_mengonfirmasi_hapus" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mengonfirmasi penghapusan&#xa;(dari LAB-UC10)" vertex="1">
+          <mxGeometry height="45" width="180" x="50" y="875" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menyimpan_perubahan" parent="swimlane_petugas" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menyimpan perubahan" vertex="1">
+          <mxGeometry height="45" width="180" x="70" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_to_membuka" edge="1" parent="swimlane_petugas" source="start_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_membuka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistem" vertex="1">
+          <mxGeometry height="1520" width="340" x="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menampilkan_daftar" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan daftar data peralatan" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_bentuk" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Bentuk&#xa;pengelolaan&#xa;yang dipilih?" vertex="1">
+          <mxGeometry height="80" width="120" x="110" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="act_form_baru" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan formulir data peralatan&#xa;baru" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tampil_saat_ini" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan data peralatan saat ini" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_ditemukan" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Data peralatan&#xa;ditemukan?" vertex="1">
+          <mxGeometry height="60" width="110" x="115" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pesan_tidak_ditemukan" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan data peralatan&#xa;tidak ditemukan" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_pinjam" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memeriksa peralatan tidak sedang&#xa;dipinjam oleh user lain/memiliki pengajuan&#xa;aktif" vertex="1">
+          <mxGeometry height="55" width="220" x="60" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_syarat_hapus" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Syarat&#xa;penghapusan&#xa;terpenuhi?" vertex="1">
+          <mxGeometry height="70" width="110" x="115" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pesan_terpakai" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penghapusan dan&#xa;menampilkan pesan peralatan masih&#xa;terpakai" vertex="1">
+          <mxGeometry height="50" width="200" x="70" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_1" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="152.5" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_validasi" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memeriksa kelengkapan dan&#xa;keabsahan data" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_valid" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Data lengkap&#xa;dan valid?" vertex="1">
+          <mxGeometry height="60" width="110" x="115" y="1105" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pesan_salah_data" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penyimpanan dan&#xa;menampilkan pesan kesalahan data" vertex="1">
+          <mxGeometry height="45" width="200" x="60" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="act_simpan_konfirmasi" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menyimpan perubahan dan&#xa;menampilkan konfirmasi" vertex="1">
+          <mxGeometry height="45" width="200" x="70" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="swimlane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="155" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_bentuk_to_form" edge="1" parent="swimlane_sistem" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_form_baru">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tambah" connectable="0" parent="edge_dec_bentuk_to_form" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tambah]" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_tampil_to_dec_ditemukan" edge="1" parent="swimlane_sistem" source="act_tampil_saat_ini" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_ditemukan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_ditemukan_to_pesan" edge="1" parent="swimlane_sistem" source="dec_ditemukan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_pesan_tidak_ditemukan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak_ditemukan" connectable="0" parent="edge_dec_ditemukan_to_pesan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak ditemukan]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_periksa_to_dec_syarat" edge="1" parent="swimlane_sistem" source="act_periksa_pinjam" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_syarat_hapus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_syarat_to_pesan" edge="1" parent="swimlane_sistem" source="dec_syarat_hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_pesan_terpakai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak_terpenuhi" connectable="0" parent="edge_dec_syarat_to_pesan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak terpenuhi]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pesan_terpakai_to_merge" edge="1" parent="swimlane_sistem" source="act_pesan_terpakai" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge_to_periksa_valid" edge="1" parent="swimlane_sistem" source="merge_1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_periksa_validasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_periksa_valid_to_dec" edge="1" parent="swimlane_sistem" source="act_periksa_validasi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_valid_to_pesan" edge="1" parent="swimlane_sistem" source="dec_valid" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_pesan_salah_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak_lengkap" connectable="0" parent="edge_dec_valid_to_pesan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak lengkap / atau tidak valid]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_simpan_to_end" edge="1" parent="swimlane_sistem" source="act_simpan_konfirmasi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pesan_tidak_ditemukan_to_end" edge="1" parent="swimlane_sistem" source="act_pesan_tidak_ditemukan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" x="-0.0177" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="640" />
+              <mxPoint x="30" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pesan_terpakai_to_end" edge="1" parent="swimlane_sistem" source="act_pesan_terpakai" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="897.5" />
+              <mxPoint x="310" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pesan_salah_data_to_end" edge="1" parent="swimlane_sistem" source="act_pesan_salah_data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" x="-0.4929" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="1252.5" />
+              <mxPoint x="290" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_membuka_to_daftar" edge="1" parent="1" source="act_membuka" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menampilkan_daftar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="152.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_daftar_to_memilih_bentuk" edge="1" parent="1" source="act_menampilkan_daftar" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_memilih_bentuk">
+          <mxGeometry relative="1" x="0.1333" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="197.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_memilih_bentuk_to_dec" edge="1" parent="1" source="act_memilih_bentuk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_bentuk">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="242.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_bentuk_to_ubah" edge="1" parent="1" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_memilih_ubah">
+          <mxGeometry relative="1" x="0.3778" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="305" />
+              <mxPoint x="650" y="465" />
+              <mxPoint x="180" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ubah" connectable="0" parent="edge_dec_bentuk_to_ubah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ubah]" vertex="1">
+          <mxGeometry relative="1" x="-0.8536" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_bentuk_to_hapus" edge="1" parent="1" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_memilih_hapus">
+          <mxGeometry relative="1" x="0.2364" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="305" />
+              <mxPoint x="90" y="750" />
+              <mxPoint x="190" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_hapus" connectable="0" parent="edge_dec_bentuk_to_hapus" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[hapus]" vertex="1">
+          <mxGeometry relative="1" x="-0.8781" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_form_to_mengisi" edge="1" parent="1" source="act_form_baru" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_mengisi_baru">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="412.5" />
+              <mxPoint x="390" y="412.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ubah_to_tampil" edge="1" parent="1" source="act_memilih_ubah" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="act_tampil_saat_ini">
+          <mxGeometry relative="1" x="0.1509" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="542.5" />
+              <mxPoint x="310" y="520" />
+            </Array>
+            <mxPoint x="300" y="542.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_ditemukan_to_mengubah" edge="1" parent="1" source="dec_ditemukan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_mengubah_data">
+          <mxGeometry relative="1" x="-0.2104" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ditemukan" connectable="0" parent="edge_dec_ditemukan_to_mengubah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ditemukan]" vertex="1">
+          <mxGeometry relative="1" x="-0.6867" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_hapus_to_periksa" edge="1" parent="1" source="act_memilih_hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_periksa_pinjam">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="802.5" />
+              <mxPoint x="310" y="772.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_syarat_to_mengonfirmasi" edge="1" parent="1" source="dec_syarat_hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_mengonfirmasi_hapus">
+          <mxGeometry relative="1" x="-0.2098" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="862.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_terpenuhi" connectable="0" parent="edge_dec_syarat_to_mengonfirmasi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[terpenuhi]" vertex="1">
+          <mxGeometry relative="1" x="-0.6827" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_mengisi_to_merge1" edge="1" parent="1" source="act_mengisi_baru" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_1">
+          <mxGeometry relative="1" x="0.0008" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="480" />
+              <mxPoint x="660" y="480" />
+              <mxPoint x="660" y="1027.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_mengubah_to_merge1" edge="1" parent="1" source="act_mengubah_data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="750" />
+              <mxPoint x="320" y="750" />
+              <mxPoint x="320" y="1027.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_mengonfirmasi_to_merge1" edge="1" parent="1" source="act_mengonfirmasi_hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1027.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_valid_to_menyimpan" edge="1" parent="1" source="dec_valid" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menyimpan_perubahan">
+          <mxGeometry relative="1" x="-0.1433" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_lengkap_valid" connectable="0" parent="edge_dec_valid_to_menyimpan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[lengkap dan valid]" vertex="1">
+          <mxGeometry relative="1" x="-0.6597" as="geometry">
+            <mxPoint x="-118" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_menyimpan_to_simpan_konfirmasi" edge="1" parent="1" source="act_menyimpan_perubahan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_simpan_konfirmasi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="1352.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NSJmvmeXNxHorzqQAqo8" name="Activity Diagram Cetak Bukti Pengajuan">
+    <mxGraphModel dx="1483" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_mahasiswa" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="800" width="240" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="swimlane_mahasiswa" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_mengonfirmasi" parent="swimlane_mahasiswa" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Mengonfirmasi pencetakan" vertex="1">
+          <mxGeometry height="50" width="180" x="30" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistem" vertex="1">
+          <mxGeometry height="800" width="280" x="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_pilih_cetak" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Mahasiswa&#xa;memilih cetak&#xa;bukti?" vertex="1">
+          <mxGeometry height="80" width="130" x="75" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menampilkan_bukti" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menampilkan bukti pengajuan dengan&#xa;nomor pengajuan dan status&#xa;Menunggu Keputusan" vertex="1">
+          <mxGeometry height="60" width="200" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menutup_konfirmasi" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menutup konfirmasi tanpa mencetak&#xa;bukti dan pengajuan tetap tersimpan" vertex="1">
+          <mxGeometry height="60" width="200" x="60" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="act_mencetak_bukti" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Mencetak bukti pengajuan" vertex="1">
+          <mxGeometry height="45" width="180" x="34" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="104" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="swimlane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="109" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_to_tampil" edge="1" parent="swimlane_sistem" source="dec_pilih_cetak" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menampilkan_bukti">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ya" connectable="0" parent="edge_dec_to_tampil" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ya, memilih cetak]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_to_tutup" edge="1" parent="swimlane_sistem" source="dec_pilih_cetak" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menutup_konfirmasi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="140" />
+              <mxPoint x="250" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tidak" connectable="0" parent="edge_dec_to_tutup" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak]" vertex="1">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_tutup_to_merge" edge="1" parent="swimlane_sistem" source="act_menutup_konfirmasi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_cetak_to_merge" edge="1" parent="swimlane_sistem" source="act_mencetak_bukti" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge_to_end" edge="1" parent="swimlane_sistem" source="merge_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_to_dec" edge="1" parent="1" source="start_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_pilih_cetak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="105" />
+              <mxPoint x="260" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_tampil_to_konfirm" edge="1" parent="1" source="act_menampilkan_bukti" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_mengonfirmasi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="310" />
+              <mxPoint x="260" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_konfirm_to_cetak" edge="1" parent="1" source="act_mengonfirmasi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_mencetak_bukti">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="552.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7IcOBjUX9iD326YsOLpZ" name="Activity Diagram Proses Keputusan Peminjaman">
+    <mxGraphModel dx="1036" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="9j-_5IFrxyCv_HftH1Or-0" />
+        <mxCell id="9j-_5IFrxyCv_HftH1Or-1" parent="9j-_5IFrxyCv_HftH1Or-0" />
+        <mxCell id="v0EkUnzeap1FmtpWclgD-0" parent="9j-_5IFrxyCv_HftH1Or-1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="1470" width="200" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2UMe58HFPUuZtSoA7nAA-0" parent="v0EkUnzeap1FmtpWclgD-0" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-0" parent="v0EkUnzeap1FmtpWclgD-0" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Membuka daftar pengajuan yang berstatus menunggu keputusan" vertex="1">
+          <mxGeometry height="70" width="140" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-2" parent="v0EkUnzeap1FmtpWclgD-0" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menampilkan daftar peralatan beserta status ketersediaannya" vertex="1">
+          <mxGeometry height="60" width="140" x="30" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-1" edge="1" parent="v0EkUnzeap1FmtpWclgD-0" source="2UMe58HFPUuZtSoA7nAA-0" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.419;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" target="6CfDl03HgsKtRauzzVIX-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v0EkUnzeap1FmtpWclgD-1" parent="9j-_5IFrxyCv_HftH1Or-1" style="swimlane;whiteSpace=wrap;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="1470" width="340" x="270" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-1" parent="v0EkUnzeap1FmtpWclgD-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan daftar pengajuan yang berstatus menunggu keputusan" vertex="1">
+          <mxGeometry height="80" width="130" x="50" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-12" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="6CfDl03HgsKtRauzzVIX-3" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;endArrow=block;endFill=1;" target="fOItEi9b-nhk2eleKpAp-0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="630" />
+              <mxPoint x="300" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-18" connectable="0" parent="fOItEi9b-nhk2eleKpAp-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="Ditolak" vertex="1">
+          <mxGeometry relative="1" x="0.3277" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-3" parent="v0EkUnzeap1FmtpWclgD-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan daftar peralatan beserta status ketersediaannya" vertex="1">
+          <mxGeometry height="60" width="140" x="30" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-16" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="6CfDl03HgsKtRauzzVIX-4" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;rounded=0;endArrow=block;endFill=1;" target="XxmF5Z_nyBlZsRpBtkn2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-4" parent="v0EkUnzeap1FmtpWclgD-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menampilkan daftar peralatan beserta status ketersediaannya" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="6CfDl03HgsKtRauzzVIX-5" parent="v0EkUnzeap1FmtpWclgD-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan daftar peralatan beserta status ketersediaannya" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-13" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="XxmF5Z_nyBlZsRpBtkn2-1" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;curved=0;endArrow=block;endFill=1;" target="6CfDl03HgsKtRauzzVIX-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="820" />
+              <mxPoint x="230" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-15" connectable="0" parent="fOItEi9b-nhk2eleKpAp-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="ditolak" vertex="1">
+          <mxGeometry relative="1" x="0.0089" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XxmF5Z_nyBlZsRpBtkn2-1" parent="v0EkUnzeap1FmtpWclgD-1" style="rhombus;" value="Pengajuan&#xa;disetujui?" vertex="1">
+          <mxGeometry height="80" width="80.49" x="59.75999999999999" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-17" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="XxmF5Z_nyBlZsRpBtkn2-2" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" target="fOItEi9b-nhk2eleKpAp-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxmF5Z_nyBlZsRpBtkn2-2" parent="v0EkUnzeap1FmtpWclgD-1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="80" width="80.49" x="69.75999999999999" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-0" parent="v0EkUnzeap1FmtpWclgD-1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="40" width="44.99" x="87.50999999999999" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="XxmF5Z_nyBlZsRpBtkn2-0" parent="v0EkUnzeap1FmtpWclgD-1" style="rhombus;" value="Pengajuan &#xa;dapat diproses" vertex="1">
+          <mxGeometry height="100" width="105" x="62.5" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-3" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="6CfDl03HgsKtRauzzVIX-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" target="XxmF5Z_nyBlZsRpBtkn2-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-5" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="XxmF5Z_nyBlZsRpBtkn2-0" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.611;entryY=0.096;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" target="6CfDl03HgsKtRauzzVIX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-7" connectable="0" parent="fOItEi9b-nhk2eleKpAp-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="[Tidak dapat diproses]" vertex="1">
+          <mxGeometry relative="1" x="-0.2904" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-10" edge="1" parent="v0EkUnzeap1FmtpWclgD-1" source="XxmF5Z_nyBlZsRpBtkn2-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.415;entryY=-0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="6CfDl03HgsKtRauzzVIX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-14" connectable="0" parent="fOItEi9b-nhk2eleKpAp-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="Dosetujui" vertex="1">
+          <mxGeometry relative="1" x="-0.3801" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-2" edge="1" parent="9j-_5IFrxyCv_HftH1Or-1" source="6CfDl03HgsKtRauzzVIX-0" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;curved=0;endArrow=block;endFill=1;" target="6CfDl03HgsKtRauzzVIX-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-4" edge="1" parent="9j-_5IFrxyCv_HftH1Or-1" source="XxmF5Z_nyBlZsRpBtkn2-0" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.391;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;endArrow=block;endFill=1;" target="6CfDl03HgsKtRauzzVIX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-6" connectable="0" parent="fOItEi9b-nhk2eleKpAp-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="[Dapat diproses]" vertex="1">
+          <mxGeometry relative="1" x="-0.1652" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fOItEi9b-nhk2eleKpAp-8" edge="1" parent="9j-_5IFrxyCv_HftH1Or-1" source="6CfDl03HgsKtRauzzVIX-2" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;endArrow=block;endFill=1;" target="XxmF5Z_nyBlZsRpBtkn2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5a6m3ya34NeSnGHP0InH-0" parent="9j-_5IFrxyCv_HftH1Or-1" style="text;whiteSpace=wrap;html=1;" value="Gambar 6.6 Activity Diagram Proses Keputusan Peminjaman" vertex="1">
+          <mxGeometry height="40" width="360" x="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Q27gpSpp2TuFCORY5Tzq" name="Activity Diagram Lihat Laporan Peminjaman">
+    <mxGraphModel dx="860" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_kepala" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Kepala Laboratorium" vertex="1">
+          <mxGeometry height="850" width="240" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="swimlane_kepala" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_membuka_laporan" parent="swimlane_kepala" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Membuka fungsi Lihat Laporan&#xa;Peminjaman" vertex="1">
+          <mxGeometry height="50" width="180" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_memilih_periode" parent="swimlane_kepala" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Memilih periode laporan" vertex="1">
+          <mxGeometry height="50" width="180" x="30" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_to_membuka" edge="1" parent="swimlane_kepala" source="start_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_membuka_laporan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swimlane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Sistem" vertex="1">
+          <mxGeometry height="850" width="280" x="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menampilkan_periode" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan daftar periode laporan" vertex="1">
+          <mxGeometry height="50" width="190" x="45" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="act_menampilkan_laporan" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Menampilkan laporan peminjaman&#xa;periode yang dipilih" vertex="1">
+          <mxGeometry height="50" width="190" x="45" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_ada_data" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Ada data&#xa;peminjaman?" vertex="1">
+          <mxGeometry height="70" width="120" x="80" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pesan_tidak_ada" parent="swimlane_sistem" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan tidak ada data&#xa;peminjaman pada periode tersebut" vertex="1">
+          <mxGeometry height="55" width="200" x="40" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="swimlane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="120" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="swimlane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="125" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_laporan_to_dec" edge="1" parent="swimlane_sistem" source="act_menampilkan_laporan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="dec_ada_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_dec_to_pesan" edge="1" parent="swimlane_sistem" source="dec_ada_data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_pesan_tidak_ada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tidak_ada" connectable="0" parent="edge_dec_to_pesan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak ada]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dec_to_merge" edge="1" parent="swimlane_sistem" source="dec_ada_data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="495" />
+              <mxPoint x="250" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ada" connectable="0" parent="edge_dec_to_merge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ada]" vertex="1">
+          <mxGeometry relative="1" x="-0.6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_pesan_to_merge" edge="1" parent="swimlane_sistem" source="act_pesan_tidak_ada" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge_to_end" edge="1" parent="swimlane_sistem" source="merge_node" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="end_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_membuka_to_tampil_periode" edge="1" parent="1" source="act_membuka_laporan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menampilkan_periode">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="210" />
+              <mxPoint x="520" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_tampil_periode_to_memilih" edge="1" parent="1" source="act_menampilkan_periode" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_memilih_periode">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="255" />
+              <mxPoint x="260" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_memilih_to_tampil_laporan" edge="1" parent="1" source="act_memilih_periode" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="act_menampilkan_laporan">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="385" />
+              <mxPoint x="520" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
