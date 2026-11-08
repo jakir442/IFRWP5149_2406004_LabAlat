@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Halaman-1" id="yws8qRkd3_64-yMDitJj">
+    <mxGraphModel dx="1483" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-dosen" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Dosen" vertex="1">
+          <mxGeometry height="920" width="250" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-dosen" style="ellipse;html=1;fillColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act-input" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;" value="Memasukkan nilai mata kuliah" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act-lengkapi" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;" value="Melengkapi nilai mata kuliah yang belum lengkap" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-dosen" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Sistem" vertex="1">
+          <mxGeometry height="920" width="300" x="290" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menyimpan nilai" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-lengkap" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Nilai sudah&lt;br&gt;lengkap?" vertex="1">
+          <mxGeometry height="60" width="100" x="100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="merge1" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry height="40" width="60" x="120" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="act-publikasi" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menyiapkan publikasi hasil studi" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="fork1" parent="lane-sistem" style="shape=rectangle;fillColor=#000000;html=1;" vertex="1">
+          <mxGeometry height="10" width="240" x="30" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="act-terbit" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menerbitkan KHS pada portal akademik" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="act-notif" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Mengirim pemberitahuan hasil studi kepada mahasiswa" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="join1" parent="lane-sistem" style="shape=rectangle;fillColor=#000000;html=1;" vertex="1">
+          <mxGeometry height="10" width="240" x="30" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="lane-sistem" source="act-simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dec-lengkap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="lane-sistem" source="dec-lengkap" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="merge1" value="[lengkap]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="act-publikasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fork1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane-sistem" source="fork1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-terbit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="lane-sistem" source="fork1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-notif">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="lane-sistem" source="act-terbit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="join1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="lane-sistem" source="act-notif" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="join1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-admin" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="920" width="250" x="590" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act-sahkan" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;" value="Memeriksa dan mengesahkan nilai" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-mhs" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="920" width="250" x="840" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act-lihat" parent="lane-mhs" style="rounded=1;whiteSpace=wrap;html=1;" value="Melihat KHS" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="final" parent="lane-mhs" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=4;" vertex="1">
+          <mxGeometry height="30" width="30" x="110" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="lane-mhs" source="act-lihat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-simpan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="dec-lengkap" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-lengkapi" value="[belum lengkap]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act-lengkapi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="merge1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="merge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-sahkan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="act-sahkan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="act-publikasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="join1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-lihat">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
