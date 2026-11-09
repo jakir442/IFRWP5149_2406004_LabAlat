@@ -1,0 +1,11 @@
+ID artefak : LAB-P06-UC
+Judul : Assesment
+Pertemuan : 07
+Sumber kebutuhan : LAB-R01; LAB-R02; LAB-R03; LAB-R04; LAB-R05; LAB-R05
+Jenis/status : Use case diagram / LATIHAN NOTASI
+Kakas : VS Code, draw.io, Browser
+Pembuat : Jakir Apriyan - 2406004
+Versi dan tanggal : v01 / 09/11/2026
+Asumsi : Hak akses sesuai; autentikasi di luar latihan
+Pemeriksaan : [hasil review]
+Riwayat revisi : Belum ada

@@ -1,0 +1,707 @@
+<mxfile host="app.diagrams.net" pages="7">
+  <diagram name="SIA-UC07" id="lmXOaUsftYvhpYnQJycp">
+    <mxGraphModel dx="1483" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC07 Lihat Kalender Akademik" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-civitas" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Civitas Akademika" vertex="1">
+          <mxGeometry height="950" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-civitas" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-buka" parent="lane-civitas" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Membuka menu&#xa;Lihat Kalender Akademik" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih" parent="lane-civitas" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih semester&#xa;yang ingin dilihat" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="act-lihat" parent="lane-civitas" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Melihat kalender akademik&#xa;beserta daftar kegiatan dan tanggalnya" vertex="1">
+          <mxGeometry height="70" width="210" x="85" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-civitas" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-buka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="lane-civitas" source="act-lihat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4q2hSGVc-G3JTesPhYuN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190.00000000000023" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4q2hSGVc-G3JTesPhYuN-1" parent="lane-civitas" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="40" x="170" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="380" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-menu" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan halaman&#xa;kalender akademik dan&#xa;daftar semester" vertex="1">
+          <mxGeometry height="75" width="180" x="100" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-tersedia" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Kalender akademik&#xa;tersedia?" vertex="1">
+          <mxGeometry height="95" width="160" x="135" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act-ambil-data" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Memeriksa ketersediaan&#xa;dan mengambil data&#xa;kegiatan akademik" vertex="1">
+          <mxGeometry height="75" width="180" x="10" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-kalender" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan kalender akademik&#xa;berdasarkan semester yang dipilih,&#xa;termasuk nama dan tanggal kegiatan" vertex="1">
+          <mxGeometry height="85" width="210" x="60" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tidak-tersedia" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" value="Menampilkan informasi&#xa;bahwa kalender akademik&#xa;belum tersedia" vertex="1">
+          <mxGeometry height="75" width="100" x="270" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="lane-sistem" source="dec-tersedia" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-ambil-data" value="[Tersedia]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane-sistem" source="act-ambil-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-kalender">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="dec-tersedia" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tidak-tersedia" value="[Tidak tersedia]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="387.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane-sistem" source="act-tidak-tersedia" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4q2hSGVc-G3JTesPhYuN-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4q2hSGVc-G3JTesPhYuN-2" parent="lane-sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="40" x="300" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-buka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-menu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil-menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act-pilih" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-tersedia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act-tampil-kalender" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-lihat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="717.5" />
+              <mxPoint x="390" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rv-SzBAD8MiIHQNIopkf" name="SIA-UC08">
+    <mxGraphModel dx="860" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC08 Input Nilai Mata Kuliah" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-dosen" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Dosen" vertex="1">
+          <mxGeometry height="950" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-dosen" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="act-buka" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Membuka menu&#xa;Input Nilai Mata Kuliah" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih-mk" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih mata kuliah&#xa;yang akan diinput nilainya" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih-mhs" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih mahasiswa&#xa;yang akan diberi nilai" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="act-input-nilai" parent="lane-dosen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memasukkan nilai mahasiswa&#xa;dan menekan tombol Simpan" vertex="1">
+          <mxGeometry height="70" width="190" x="95" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-dosen" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-buka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qLhKiuWrNkev_1fkbGKF-1" parent="lane-dosen" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="160" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="380" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-mk" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan daftar&#xa;mata kuliah yang diajar dosen" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-mhs" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan daftar mahasiswa&#xa;yang mengambil mata kuliah" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="act-form" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan formulir&#xa;input nilai mahasiswa" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-valid" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Nilai berada&#xa;dalam rentang&#xa;yang valid?" vertex="1">
+          <mxGeometry height="85" width="130" x="70" y="602.5" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menyimpan nilai&#xa;mahasiswa dan menampilkan&#xa;konfirmasi keberhasilan" vertex="1">
+          <mxGeometry height="75" width="210" x="85" y="827.5" as="geometry" />
+        </mxCell>
+        <mxCell id="act-error" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" value="Menolak penyimpanan&#xa;dan menampilkan pesan&#xa;kesalahan nilai" vertex="1">
+          <mxGeometry height="85" width="95" x="275" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan" value="[Valid]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="775" />
+              <mxPoint x="190" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-error" value="[Tidak valid]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-buka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-mk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil-mk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih-mk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act-pilih-mk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-mhs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act-tampil-mhs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih-mhs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act-pilih-mhs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-input-nilai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="act-input-nilai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-valid">
+          <mxGeometry relative="1" x="-0.0355" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="act-simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="qLhKiuWrNkev_1fkbGKF-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="234.9999999999999" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="act-error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="act-input-nilai">
+          <mxGeometry relative="1" x="0.1711" as="geometry">
+            <Array as="points">
+              <mxPoint x="732.5" y="820" />
+              <mxPoint x="220" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LNNpMv4cFpMjeswLU5r_" name="SIA-UC09">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC09 Lihat Kartu Hasil Studi" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-mahasiswa" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="950" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-mahasiswa" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="act-buka" parent="lane-mahasiswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Membuka menu&#xa;Lihat Kartu Hasil Studi (KHS)" vertex="1">
+          <mxGeometry height="65" width="190" x="95" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih" parent="lane-mahasiswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih semester&#xa;yang ingin dilihat" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act-lihat" parent="lane-mahasiswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Melihat KHS yang berisi&#xa;mata kuliah, nilai yang terbit,&#xa;dan informasi semester" vertex="1">
+          <mxGeometry height="80" width="210" x="85" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-mahasiswa" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-buka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="lane-mahasiswa" source="act-lihat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FMJiq1l8nZl_OHTTdnsf-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMJiq1l8nZl_OHTTdnsf-1" parent="lane-mahasiswa" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="45" x="167.5" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="490" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-menu" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan halaman KHS&#xa;dan daftar semester" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="act-ambil-data" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Mengambil data studi&#xa;berdasarkan semester&#xa;yang dipilih" vertex="1">
+          <mxGeometry height="70" width="180" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-publikasi" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Ada nilai yang&#xa;sudah dipublikasikan?" vertex="1">
+          <mxGeometry height="90" width="145" x="117.5" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-khs" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan KHS&#xa;dengan nilai yang&#xa;sudah dipublikasikan" vertex="1">
+          <mxGeometry height="75" width="210" x="85" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="act-belum-ada" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" value="Menampilkan informasi&#xa;belum ada nilai yang&#xa;dipublikasikan" vertex="1">
+          <mxGeometry height="80" width="95" x="377.5" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="lane-sistem" source="act-ambil-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-publikasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane-sistem" source="dec-publikasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-khs" value="[Ada nilai terbit]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="dec-publikasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-belum-ada" value="[Belum ada nilai terbit]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane-sistem" source="act-belum-ada" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FMJiq1l8nZl_OHTTdnsf-2">
+          <mxGeometry relative="1" x="-0.0588" as="geometry">
+            <Array as="points" />
+            <mxPoint x="425" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMJiq1l8nZl_OHTTdnsf-2" parent="lane-sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="45" x="402.5" y="805" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-buka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-menu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil-menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act-pilih" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-ambil-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act-tampil-khs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-lihat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rOWGH1mgpeb9Iq0P-qHO" name="SIA-UC10">
+    <mxGraphModel dx="1792" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC10 Kelola Data Mahasiswa" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-admin" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="950" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-admin" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="act-buka" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Membuka menu&#xa;Kelola Data Mahasiswa" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih fungsi pengelolaan&#xa;data mahasiswa" vertex="1">
+          <mxGeometry height="70" width="190" x="95" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-admin" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-buka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="380" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan halaman&#xa;pengelolaan dan daftar&#xa;data mahasiswa" vertex="1">
+          <mxGeometry height="75" width="180" x="100" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-fungsi" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Fungsi pengelolaan&#xa;yang dipilih?" vertex="1">
+          <mxGeometry height="90" width="155" x="125" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tambah" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="Melanjutkan ke&#xa;SIA-UC11&#xa;Tambah Data Mahasiswa" vertex="1">
+          <mxGeometry height="85" width="110" x="15" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="act-ubah" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="Melanjutkan ke&#xa;SIA-UC12&#xa;Ubah Data Mahasiswa" vertex="1">
+          <mxGeometry height="85" width="110" x="135" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="act-hapus" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="Melanjutkan ke&#xa;SIA-UC13&#xa;Hapus Data Mahasiswa" vertex="1">
+          <mxGeometry height="85" width="110" x="255" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="merge" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1">
+          <mxGeometry height="45" width="60" x="160" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="lane-sistem" source="dec-fungsi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tambah" value="[Tambah]">
+          <mxGeometry relative="1" x="-0.0781" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="495" />
+              <mxPoint x="70" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane-sistem" source="dec-fungsi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-ubah" value="[Ubah]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="lane-sistem" source="dec-fungsi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-hapus" value="[Hapus]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="lane-sistem" source="act-tambah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="merge">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="777.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="act-ubah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="merge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane-sistem" source="act-hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="merge">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="777.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="lane-sistem" source="merge" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gkrxO5NwyFKkftAHIT1y-1" parent="lane-sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="45" x="167.5" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-buka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act-pilih" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-fungsi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="O9x1RkyF2uFrcpKbSjMW" name="SIA-UC11">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC11 Tambah Data Mahasiswa" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-admin" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="950" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-admin" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih-tambah" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih fungsi&#xa;Tambah Data Mahasiswa" vertex="1">
+          <mxGeometry height="65" width="190" x="95" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act-isi-data" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Mengisi formulir&#xa;data mahasiswa baru" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Menekan tombol Simpan&#xa;untuk mengirim data" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="act-perbaiki" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memperbaiki data&#xa;sesuai pesan kesalahan" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-admin" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih-tambah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="lane-admin" source="act-isi-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="lane-admin" source="act-perbaiki" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="950" width="440" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-form" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan formulir&#xa;penambahan data mahasiswa" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="act-validasi" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Memeriksa kelengkapan&#xa;dan keabsahan data&#xa;mahasiswa" vertex="1">
+          <mxGeometry height="70" width="180" x="100" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-valid" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Data lengkap&#xa;dan valid?" vertex="1">
+          <mxGeometry height="80" width="110" x="135" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan-data" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menyimpan data&#xa;mahasiswa baru dan&#xa;menampilkan konfirmasi" vertex="1">
+          <mxGeometry height="75" width="210" x="85" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="act-error" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" value="Menolak penyimpanan&#xa;dan menampilkan pesan&#xa;kesalahan data" vertex="1">
+          <mxGeometry height="95" width="110" x="307" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane-sistem" source="act-validasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan-data" value="[Valid]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="lane-sistem" source="act-simpan-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="189.99999999999977" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-error" value="[Tidak valid]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bui6QX21JJNfbjt9tPXg-1" parent="lane-sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="45" width="50" x="165" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-pilih-tambah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-isi-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act-simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-validasi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="667.5" />
+              <mxPoint x="460" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="act-error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-perbaiki">
+          <mxGeometry relative="1" x="-0.1221" as="geometry">
+            <Array as="points">
+              <mxPoint x="772" y="530" />
+              <mxPoint x="110" y="530" />
+              <mxPoint x="110" y="852.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L6rRbMFtXfLzgK1mQyQs" name="SIA-UC12">
+    <mxGraphModel dx="1246" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Activity Diagram SIA-UC12 Ubah Data Mahasiswa" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-admin" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="1125" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="initial" parent="lane-admin" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih-ubah" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih fungsi&#xa;Ubah Data Mahasiswa" vertex="1">
+          <mxGeometry height="65" width="190" x="95" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="act-pilih-mhs" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memilih data mahasiswa&#xa;yang akan diubah" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="act-ubah-data" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Mengubah informasi&#xa;mahasiswa pada formulir" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Menekan tombol Simpan&#xa;untuk mengirim perubahan" vertex="1">
+          <mxGeometry height="65" width="190" x="95" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="act-perbaiki" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Memperbaiki data&#xa;sesuai pesan kesalahan" vertex="1">
+          <mxGeometry height="65" width="170" x="105" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane-admin" source="initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih-ubah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane-admin" source="act-ubah-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="lane-admin" source="act-perbaiki" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=35;horizontal=1;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="1125" width="440" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-daftar" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan daftar&#xa;data mahasiswa tersimpan" vertex="1">
+          <mxGeometry height="65" width="180" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="act-tampil-form" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menampilkan formulir&#xa;berisi data mahasiswa&#xa;yang dipilih" vertex="1">
+          <mxGeometry height="75" width="180" x="100" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="act-validasi" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Memeriksa kelengkapan&#xa;dan keabsahan perubahan&#xa;data mahasiswa" vertex="1">
+          <mxGeometry height="70" width="180" x="100" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="dec-valid" parent="lane-sistem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" value="Perubahan data&#xa;valid?" vertex="1">
+          <mxGeometry height="80" width="110" x="135" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="act-simpan-data" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" value="Menyimpan perubahan&#xa;dan menampilkan konfirmasi&#xa;berhasil diperbarui" vertex="1">
+          <mxGeometry height="65" width="210" x="85" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="act-error" parent="lane-sistem" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" value="Menolak perubahan&#xa;dan menampilkan pesan&#xa;kesalahan data" vertex="1">
+          <mxGeometry height="80" width="125" x="275" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="lane-sistem" source="act-validasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="dec-valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-simpan-data" value="[Valid]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane-sistem" source="act-simpan-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="SDoW6yGl489xrCkVHCs1-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="lane-sistem" source="dec-valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-error" value="[Tidak valid]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SDoW6yGl489xrCkVHCs1-1" parent="lane-sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="170" y="1064" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act-pilih-ubah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-daftar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act-tampil-daftar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-pilih-mhs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act-pilih-mhs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-tampil-form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act-tampil-form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-ubah-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act-simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-validasi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="762.5" />
+              <mxPoint x="350" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="act-error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="act-perbaiki">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="927.5" />
+              <mxPoint x="590" y="927.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="JrAjIRH7UNqt75Q4ymLQ" name="SIA-UC13">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=16;" value="Activity Diagram SIA-UC13 Hapus Data Mahasiswa" vertex="1">
+          <mxGeometry height="35" width="760" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="laneAdmin" parent="1" style="swimlane;html=1;horizontal=1;startSize=35;fillColor=#E1D5E7;swimlaneFillColor=#FFFFFF;strokeColor=#9673A6;fontStyle=1;fontSize=13;" value="Admin Akademik" vertex="1">
+          <mxGeometry height="1055" width="380" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="laneAdmin" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="175" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="laneAdmin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Memilih menu&#xa;Hapus Data Mahasiswa" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="laneAdmin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Memilih data&#xa;mahasiswa" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="laneAdmin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Memilih konfirmasi&#xa;atau batal penghapusan" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="laneAdmin" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="laneSystem" parent="1" style="swimlane;html=1;horizontal=1;startSize=35;fillColor=#D5E8D4;swimlaneFillColor=#FFFFFF;strokeColor=#82B366;fontStyle=1;fontSize=13;" value="Sistem" vertex="1">
+          <mxGeometry height="1055" width="430" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Menampilkan daftar&#xa;mahasiswa" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Memeriksa catatan&#xa;akademik mahasiswa" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="laneSystem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Memiliki catatan&#xa;akademik aktif?" vertex="1">
+          <mxGeometry height="85" width="120" x="130" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" value="Menolak penghapusan dan&#xa;menampilkan alasan" vertex="1">
+          <mxGeometry height="55" width="170" x="105" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Menampilkan konfirmasi&#xa;penghapusan data" vertex="1">
+          <mxGeometry height="55" width="170" x="240" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="laneSystem" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Penghapusan&#xa;dikonfirmasi?" vertex="1">
+          <mxGeometry height="85" width="120" x="130" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Menghapus data&#xa;mahasiswa" vertex="1">
+          <mxGeometry height="55" width="150" x="25" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="laneSystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Membatalkan penghapusan&#xa;dan mempertahankan data" vertex="1">
+          <mxGeometry height="55" width="150" x="205" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="laneSystem" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="laneSystem" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s3" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="laneSystem" source="s3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="laneSystem" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s4" value="Tidak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="475" />
+              <mxPoint x="320" y="707" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="laneSystem" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s5" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="laneSystem" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s6" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="laneSystem" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="1005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="laneSystem" source="s6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cxybUOzk7S-sgHiZjgkC-1" parent="laneSystem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="172.5" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="cxybUOzk7S-sgHiZjgkC-2" parent="laneSystem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="82.5" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="cxybUOzk7S-sgHiZjgkC-3" parent="laneSystem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="262.5" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="a3">
+          <mxGeometry relative="1" x="0.131" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="787.5" />
+              <mxPoint x="360" y="697.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;" target="d2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
